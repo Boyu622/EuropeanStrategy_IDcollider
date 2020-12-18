@@ -15,6 +15,8 @@ void PseudoScalar5(void)
 
   double xsection3,xsection4,xsection5,xsection6,xsection7,xsection8,xsection9,xsection10,xsection11,xsection12,xsection13,xsection14;
   double sumsqterm,sumsqterm1,ag,at,ab,ac;
+	
+	TCanvas *c = new TCanvas();
 
     TGraph *g1 = new TGraph();
  TGraph *g2 = new TGraph();
@@ -102,6 +104,6 @@ g4->Draw("L");
      legend->AddEntry(g3,"b","l");
    legend->AddEntry(g4,"g","l");
    legend->Draw();
-
+c->Print(br.pdf);
 
 }
