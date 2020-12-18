@@ -50,7 +50,6 @@ width = 0;
      if(Mdm>qs){xsection1 = xsection1 + (3*qs*qs*Mdm*Mdm*sqrt(1-(qs*qs)/(Mdm*Mdm))/(2*3.14*v*v)/(((Mmed*Mmed)-4*(Mdm*Mdm))*((Mmed*Mmed)-4*(Mdm*Mdm))+width*width*Mmed*Mmed));}
      if(Mdm>qt){xsection1 = xsection1 + (3*qt*qt*Mdm*Mdm*sqrt(1-(qt*qt)/(Mdm*Mdm))/(2*3.14*v*v)/(((Mmed*Mmed)-4*(Mdm*Mdm))*((Mmed*Mmed)-4*(Mdm*Mdm))+width*width*Mmed*Mmed));}
      if(Mdm>qb){xsection1 = xsection1 + (3*qb*qb*Mdm*Mdm*sqrt(1-(qb*qb)/(Mdm*Mdm))/(2*3.14*v*v)/(((Mmed*Mmed)-4*(Mdm*Mdm))*((Mmed*Mmed)-4*(Mdm*Mdm))+width*width*Mmed*Mmed));}
-xsection1 = xsection1*1.167e-17;
      if(Mdm<qt){ sumsqterm = atan(1/sqrt(qt*qt/(Mdm*Mdm)-1))*atan(1/sqrt(qt*qt/(Mdm*Mdm)-1))*atan(1/sqrt(qt*qt/(Mdm*Mdm)-1))*atan(1/sqrt(qt*qt/(Mdm*Mdm)-1))*qt*qt*qt*qt*qt*qt*qt*qt/(Mdm*Mdm*Mdm*Mdm);
      
        xsection1 =xsection1+ (0.1184*0.1184*sumsqterm/(2*3.14*3.14*3.14*v*v)/(((Mmed*Mmed)-4*(Mdm*Mdm))*((Mmed*Mmed)-4*(Mdm*Mdm))+width*width*Mmed*Mmed)/(1+0.132*log(Mdm/91.2))/(1+0.132*log(Mdm/91.2)));}
@@ -59,6 +58,6 @@ xsection1 = xsection1*1.167e-17;
 }
 
 }
-cout<<xsection1<<endl;
+cout<<xsection1*1.167e-17<<endl;
   
 }
