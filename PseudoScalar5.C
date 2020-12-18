@@ -55,11 +55,6 @@ xsection1 = xsection1*1.167e-17;
      
        xsection1 =xsection1+ (0.1184*0.1184*sumsqterm/(2*3.14*3.14*3.14*v*v)/(((Mmed*Mmed)-4*(Mdm*Mdm))*((Mmed*Mmed)-4*(Mdm*Mdm))+width*width*Mmed*Mmed)/(1+0.132*log(Mdm/91.2))/(1+0.132*log(Mdm/91.2)));}
 
-if(Mmed == 500){g1->SetPoint(g1->GetN(), Mdm, xsection1);}
-if(Mmed == 1000){g2->SetPoint(g2->GetN(), Mdm, xsection1);}
-if(Mmed == 1500){g3->SetPoint(g3->GetN(), Mdm, xsection1);}
-if(Mmed == 2000){g4->SetPoint(g4->GetN(), Mdm, xsection1);}
-if(Mmed == 2500){g5->SetPoint(g5->GetN(), Mdm, xsection1);}
 
 }
 
